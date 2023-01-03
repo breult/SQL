@@ -1,0 +1,29 @@
+--Create a database for a shoe store
+
+
+CREATE TABLE footwear  (id INTEGER PRIMARY KEY, style TEXT, quantity INTEGER, price INTEGER, size TEXT, color TEXT);
+
+INSERT INTO footwear VALUES (1, "loafer", 4, 25, 10, "brown");
+INSERT INTO footwear VALUES (2, "tennis shoe", 2, 50, 9,"white");
+INSERT INTO footwear VALUES (3, "high heels", 10, 65, 3, "black");
+INSERT INTO footwear VALUES (4, "cowboy boots", 9, 125, 11,"red");
+INSERT INTO footwear VALUES (5, "hiking boots", 6, 150,12,"camo");
+INSERT INTO footwear VALUES (6, "slippers", 20, 13, 8,"white");
+INSERT INTO footwear VALUES (7, "work boots", 25, 95, 10, "black");
+INSERT INTO footwear VALUES (8, "clogs", 44, 45, 9, "green");
+INSERT INTO footwear VALUES (9,"running shoes", 88, 120, 7,"blue");
+INSERT INTO footwear VALUES (10,"oxford", 39, 72, 8,"olive");
+INSERT INTO footwear VALUES (11, "flip flops", 129, 28,14,"pink");
+INSERT INTO footwear VALUES (12, "mary janes", 80, 42, 6,"grey");
+INSERT INTO footwear VALUES (13, "shower shoes", 300, 22, 8,"purple");
+INSERT INTO footwear VALUES (14, "high top sneakers", 15, 90, 11,"orange");
+INSERT INTO footwear VALUES (15, "sandals", 68, 58,12,"khaki");
+
+SELECT*FROM footwear;
+
+--Display shoes ordered by price
+SELECT*FROM footwear ORDER BY price;
+
+--SUM the total of shoes in inventory
+SELECT SUM(quantity) FROM footwear;
+
